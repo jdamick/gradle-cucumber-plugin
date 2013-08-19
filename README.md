@@ -23,19 +23,19 @@ These are the conventions we tend to use:
 
 #### Create Feature file (using [Gherkin](http://cukes.info/gherkin.html))
 
-test/resources/<glue package>/<some>.feature
+```test/resources/<glue package>/<some>.feature```
 
 [sample](https://github.com/jdamick/gradle-cucumber-plugin/blob/master/sample/src/test/resources/com/damick/pickling.feature)
 
 #### Create Runner 
 
-test/<glue package>/SomeFeature.java 
+```test/<glue package>/SomeFeature.java ```
 
 [sample](https://github.com/jdamick/gradle-cucumber-plugin/blob/master/sample/src/test/java/com/damick/CucurbitaceaeFeatures.java)
 
 #### Create Test with assertions, etc.
 
-test/<glue package>/SomeTest.java
+```test/<glue package>/SomeTest.java```
 
 [sample](https://github.com/jdamick/gradle-cucumber-plugin/blob/master/sample/src/test/java/com/damick/PicklingTest.java)
   
