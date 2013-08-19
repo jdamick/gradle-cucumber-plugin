@@ -21,16 +21,27 @@ Grab the cucumber.gradle file, put it in your gradle directory for example.
 
 These are the conventions we tend to use:
 
-  - Create Feature file (using [Gherkin](http://cukes.info/gherkin.html))
-    test/resources/<glue package>/<some>.feature
-    
-  - Create Runner 
-    test/<glue package>/SomeFeature.java 
+#### Create Feature file (using [Gherkin](http://cukes.info/gherkin.html))
 
-  - Create Test with assertions, etc.
-     test/<glue package>/SomeTest.java 
+test/resources/<glue package>/<some>.feature
+
+[sample](https://github.com/jdamick/gradle-cucumber-plugin/blob/master/sample/src/test/resources/com/damick/pickling.feature)
+
+#### Create Runner 
+
+test/<glue package>/SomeFeature.java 
+
+[sample](https://github.com/jdamick/gradle-cucumber-plugin/blob/master/sample/src/test/java/com/damick/CucurbitaceaeFeatures.java)
+
+#### Create Test with assertions, etc.
+
+test/<glue package>/SomeTest.java
+
+[sample](https://github.com/jdamick/gradle-cucumber-plugin/blob/master/sample/src/test/java/com/damick/PicklingTest.java)
   
-  [More info on cucumber steps](http://cukes.info/step-definitions.html)
+
+
+[More info on cucumber steps](http://cukes.info/step-definitions.html)
   
 
 ## Running
