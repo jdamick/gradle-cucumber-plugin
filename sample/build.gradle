@@ -1,0 +1,26 @@
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply from: project.file('../cucumber.gradle')
+
+
+allprojects {
+    repositories { mavenLocal()
+                   mavenCentral()
+                   maven { url 'https://oss.sonatype.org/content/repositories/releases/' }}
+}
+
+cucumber {
+  gluePackages = ['com.damick']  
+}
+
+task createWrapper(type: Wrapper) {
+  description = "Create a gradle wrapper for you project"
+  gradleVersion = '1.6'
+}
+
+dependencies {
+    testCompile "junit:junit:[4.11,)"
+}
